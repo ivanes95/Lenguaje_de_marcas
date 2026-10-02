@@ -1,0 +1,11 @@
+{
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "matricula": "2549LPD",
+  "kilometros": 120000,
+  "datos_conductor": {
+    "nombre": "Pepe",
+    "apellido": "Alemany",
+    "email": "pepe.alemany@example.com"
+  }
+}
