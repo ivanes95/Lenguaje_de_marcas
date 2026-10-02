@@ -23,5 +23,3 @@ Haga clic en cualquiera de las secciones para acceder a los ejercicios correspon
 ---
 
 [🏠 Volver al Perfil de GitHub](https://github.com/benyachraqayoub)
-
-fasf
