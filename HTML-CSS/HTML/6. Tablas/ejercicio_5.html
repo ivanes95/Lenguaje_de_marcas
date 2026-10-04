@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informe de rendimiento</title>
+  </head>
+  <body>
+    <header>
+      <h1>Informe de rendimiento de la aplicación</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Rendimiento por versión</h2>
+
+        <table>
+          <caption>
+            Métricas de rendimiento de las versiones de la aplicación
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Versión</th>
+              <th scope="col">Usuarios</th>
+              <th scope="col">Tiempo medio de respuesta</th>
+              <th scope="col">Errores</th>
+              <th scope="col">Disponibilidad</th>
+              <th scope="col">Estado</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">1.0</th>
+              <td>1.200</td>
+              <td>850 ms</td>
+              <td>42</td>
+              <td>97,8 %</td>
+              <td>Revisar</td>
+            </tr>
+
+            <tr>
+              <th scope="row">1.1</th>
+              <td>2.500</td>
+              <td>520 ms</td>
+              <td>18</td>
+              <td>99,1 %</td>
+              <td>Estable</td>
+            </tr>
+
+            <tr>
+              <th scope="row">2.0</th>
+              <td>4.800</td>
+              <td>310 ms</td>
+              <td>7</td>
+              <td>99,8 %</td>
+              <td>Excelente</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="6">
+                Datos recopilados durante las pruebas de rendimiento.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section>
+        <h2>Criterios de evaluación</h2>
+
+        <table>
+          <caption>
+            Criterios utilizados para evaluar el rendimiento
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Métrica</th>
+              <th scope="col">Excelente</th>
+              <th scope="col">Aceptable</th>
+              <th scope="col">Revisar</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">Tiempo de respuesta</th>
+              <td>&lt; 400 ms</td>
+              <td>400–700 ms</td>
+              <td>&gt; 700 ms</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Errores</th>
+              <td>&lt; 10</td>
+              <td>10–30</td>
+              <td>&gt; 30</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Disponibilidad</th>
+              <td>&gt; 99,5 %</td>
+              <td>99–99,5 %</td>
+              <td>&lt; 99 %</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Informe técnico</p>
+    </footer>
+  </body>
+</html>
+
+<!--
+
+Lo importante de este ejercicio
+
+Aquí ya estamos trabajando con una tabla bastante cercana a una situación profesional.
+
+El alumno utiliza:
+
+<caption> para identificar la tabla.
+<thead> para los encabezados.
+<tbody> para los datos.
+<tfoot> para información adicional.
+<th scope="col"> para encabezados de columnas.
+<th scope="row"> para encabezados de filas.
+colspan para combinar columnas.
+Dos tablas relacionadas dentro de una estructura semántica.
+
+Además, fíjate en:
+<td>&lt; 400 ms</td>
+
+En HTML no podemos escribir directamente `< 400 ms` porque `<` se interpreta como el inicio de una etiqueta. Por eso utilizamos la entidad HTML `&lt;`.
+
+Lo mismo ocurre con `>` mediante `&gt;`.
+
+-->
