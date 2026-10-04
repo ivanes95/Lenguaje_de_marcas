@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Valencia - Multimedia</title>
+  </head>
+  <body>
+    <h1>Valencia - Multimedia</h1>
+
+    <h2>Audio</h2>
+
+    <p>Escucha una grabación relacionada con la ciudad de Valencia.</p>
+
+    <audio controls>
+      <source src="media/ciudad.mp3" type="audio/mpeg" />
+
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <h2>Vídeo</h2>
+
+    <p>
+      En el siguiente vídeo puedes conocer algunos de los lugares más
+      representativos de Valencia.
+    </p>
+
+    <video controls width="800" poster="media/portada.jpg">
+      <source src="media/ciudad.mp4" type="video/mp4" />
+
+      Tu navegador no soporta la reproducción de vídeo.
+    </video>
+  </body>
+</html>
+
+<!--
+
+Aquí aparecen varios conceptos importantes
+
+controls: controls
+
+permite mostrar los controles de reproducción.
+
+El vídeo utiliza:
+poster="media/portada.jpg"
+
+para mostrar una imagen antes de reproducirse.
+
+Y:
+<source src="media/ciudad.mp4" type="video/mp4">
+
+indica el archivo multimedia y su tipo.
+
+El texto:
+Tu navegador no soporta la reproducción de vídeo.
+
+funciona como contenido alternativo para navegadores que no soporten el elemento.
+
+Reto adicional
+
+Añadir otro formato:
+<source src="media/ciudad.webm" type="video/webm">
+
+Esto permite introducir el concepto de que <video> puede tener varias fuentes y el navegador puede seleccionar una compatible.
+
+-->
