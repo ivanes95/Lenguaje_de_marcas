@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TechNews</title>
+  </head>
+  <body>
+    <header>
+      <h1>TechNews</h1>
+
+      <nav>
+        <a href="/">Inicio</a>
+        <a href="/noticias">Noticias</a>
+        <a href="/contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Últimas noticias</h2>
+
+        <article>
+          <h3>
+            La inteligencia artificial transforma el desarrollo de software
+          </h3>
+
+          <p>
+            <time datetime="2026-10-04"> 4 de octubre de 2026 </time>
+          </p>
+
+          <p>
+            Las herramientas basadas en inteligencia artificial están cambiando
+            la forma en la que los desarrolladores crean software.
+          </p>
+
+          <a href="noticia.html"> Leer más </a>
+        </article>
+
+        <article>
+          <h3>Nuevas herramientas para frontend</h3>
+
+          <p>
+            <time datetime="2026-10-03"> 3 de octubre de 2026 </time>
+          </p>
+
+          <p>
+            El ecosistema frontend continúa evolucionando con nuevas
+            herramientas y tecnologías.
+          </p>
+
+          <a href="frontend.html"> Leer más </a>
+        </article>
+      </section>
+
+      <aside>
+        <h2>Artículos populares</h2>
+
+        <a href="html.html"> Aprender HTML </a>
+
+        <a href="css.html"> Aprender CSS </a>
+
+        <a href="javascript.html"> Aprender JavaScript </a>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© 2026 TechNews</p>
+    </footer>
+  </body>
+</html>
+
+<!--
+
+Lo realmente importante del ejercicio
+
+El alumno no debería aprender una transformación mecánica como:
+
+<div class="cabecera"> → <header>
+<div class="menu">     → <nav>
+<div class="contenido"> → <main>
+<div class="noticia">  → <article>
+<div class="lateral">  → <aside>
+<div class="pie">      → <footer>
+
+Porque no siempre es así.
+
+La pregunta correcta es:
+
+> ¿Qué función tiene este contenido dentro del documento?
+
+Si representa navegación:
+<nav>
+
+Si representa contenido principal:
+<main>
+
+
+Si representa una pieza independiente:
+<article>
+
+Si representa contenido relacionado pero secundario:
+<aside>
+
+Y si simplemente necesitamos un contenedor sin significado semántico especial, entonces sí puede ser perfectamente correcto utilizar <div>.
+
+---
+
+Resumen de la progresión
+
+Estos cinco ejercicios dejan una progresión bastante buena:
+
+| Ejercicio | Concepto principal                       | Nivel |
+| --------- | ---------------------------------------- | ----- |
+| 1         | Sustituir `div` por elementos semánticos | ⭐     |
+| 2         | Estructura completa de una página        | ⭐⭐    |
+| 3         | `section` vs `article` + `time`          | ⭐⭐⭐   |
+| 4         | Blog real + `aside` + `figure`           | ⭐⭐⭐⭐  |
+| 5         | Refactorización de código existente      | ⭐⭐⭐⭐⭐ |
+
+Conceptos que se deben dominar al acabar
+
+<header>       → cabecera
+<nav>          → navegación
+<main>         → contenido principal
+<section>      → sección temática
+<article>      → contenido independiente
+<aside>        → contenido relacionado/secundario
+<footer>       → pie de página o sección
+<time>         → fecha/hora
+<figure>       → contenido ilustrativo independiente
+
+-->

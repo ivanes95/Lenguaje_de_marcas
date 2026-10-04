@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DevBlog - Desarrollo web</title>
+  </head>
+  <body>
+    <header>
+      <h1>DevBlog</h1>
+
+      <p>Blog sobre desarrollo web y tecnología.</p>
+
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="articulos.html">Artículos</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Últimos artículos</h2>
+
+        <article>
+          <h2>Introducción a HTML semántico</h2>
+
+          <p>
+            Publicado por Carlos López el
+            <time datetime="2026-10-04"> 4 de octubre de 2026 </time>
+          </p>
+
+          <figure>
+            <img
+              src="img/html-semantico.jpg"
+              alt="Código HTML mostrado en un editor"
+              width="600"
+            />
+
+            <figcaption>Ejemplo de estructura HTML semántica.</figcaption>
+          </figure>
+
+          <p>
+            HTML semántico permite describir mejor la estructura y el
+            significado del contenido de una página web.
+          </p>
+
+          <a href="articulos/html-semantico.html">
+            Leer el artículo completo
+          </a>
+        </article>
+
+        <article>
+          <h2>Primeros pasos con CSS</h2>
+
+          <p>
+            Publicado por Carlos López el
+            <time datetime="2026-10-02"> 2 de octubre de 2026 </time>
+          </p>
+
+          <figure>
+            <img src="img/css.jpg" alt="Código CSS en un editor" width="600" />
+
+            <figcaption>Ejemplo de código CSS.</figcaption>
+          </figure>
+
+          <p>
+            CSS permite controlar la presentación visual de los documentos HTML.
+          </p>
+
+          <a href="articulos/css.html"> Leer el artículo completo </a>
+        </article>
+
+        <article>
+          <h2>Cómo organizar un proyecto web</h2>
+
+          <p>
+            Publicado por Carlos López el
+            <time datetime="2026-09-30"> 30 de septiembre de 2026 </time>
+          </p>
+
+          <figure>
+            <img
+              src="img/proyecto.jpg"
+              alt="Estructura de carpetas de un proyecto web"
+              width="600"
+            />
+
+            <figcaption>Organización de un proyecto web.</figcaption>
+          </figure>
+
+          <p>
+            Una buena organización del proyecto facilita su mantenimiento y
+            evolución.
+          </p>
+
+          <a href="articulos/organizacion.html"> Leer el artículo completo </a>
+        </article>
+      </section>
+
+      <aside>
+        <section>
+          <h2>Sobre el autor</h2>
+
+          <p>
+            Carlos López es desarrollador web y escribe sobre tecnologías
+            frontend.
+          </p>
+        </section>
+
+        <section>
+          <h2>Categorías</h2>
+
+          <a href="categoria/html.html">HTML</a>
+          <a href="categoria/css.html">CSS</a>
+          <a href="categoria/javascript.html">JavaScript</a>
+        </section>
+
+        <section>
+          <h2>Redes profesionales</h2>
+
+          <a href="https://www.linkedin.com/"> Perfil profesional </a>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© 2026 DevBlog</p>
+
+      <nav>
+        <a href="privacidad.html">Política de privacidad</a>
+        <a href="cookies.html">Política de cookies</a>
+      </nav>
+    </footer>
+  </body>
+</html>
+
+<!--
+
+Aquí aparece una distinción interesante
+
+Tenemos:
+
+<main>
+
+Dentro:
+
+<section>
+    <article>
+    <article>
+    <article>
+</section>
+
+
+Y también:
+<aside>
+
+
+El `<aside>` contiene información **relacionada pero secundaria** respecto al contenido principal.
+
+Por ejemplo:
+
+* información del autor,
+* categorías,
+* enlaces relacionados,
+* publicidad,
+* contenido complementario.
+
+No significa necesariamente "barra lateral". 
+Puede aparecer en diferentes posiciones dependiendo del diseño CSS.
+
+-->
