@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TechNews | Noticias de tecnología</title>
+
+    <meta
+      name="description"
+      content="TechNews: noticias y actualidad sobre desarrollo web, inteligencia artificial, cloud y tecnología."
+    />
+  </head>
+
+  <body>
+    <header>
+      <p>TechNews</p>
+
+      <p>Noticias y actualidad tecnológica</p>
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="desarrollo.html">Desarrollo</a>
+          </li>
+          <li>
+            <a href="ia.html">Inteligencia Artificial</a>
+          </li>
+          <li>
+            <a href="cloud.html">Cloud</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Actualidad tecnológica</h1>
+
+      <section>
+        <h2>Noticias destacadas</h2>
+
+        <article>
+          <h3>Nuevas herramientas para desarrolladores web</h3>
+
+          <p>
+            <time datetime="2026-09-28"> 28 de septiembre de 2026 </time>
+          </p>
+
+          <figure>
+            <img
+              src="img/desarrollo-web.jpg"
+              alt="Desarrollador trabajando con código en un ordenador"
+            />
+
+            <figcaption>El desarrollo web continúa evolucionando.</figcaption>
+          </figure>
+
+          <p>
+            Las nuevas herramientas de desarrollo permiten mejorar la
+            productividad de los equipos.
+          </p>
+
+          <a href="noticias/herramientas-desarrollo.html">
+            Leer noticia completa
+          </a>
+        </article>
+
+        <article>
+          <h3>La inteligencia artificial transforma el desarrollo</h3>
+
+          <p>
+            <time datetime="2026-09-27"> 27 de septiembre de 2026 </time>
+          </p>
+
+          <p>
+            Los equipos de desarrollo están incorporando nuevas herramientas
+            basadas en inteligencia artificial.
+          </p>
+
+          <a href="noticias/ia-desarrollo.html"> Leer noticia completa </a>
+        </article>
+
+        <article>
+          <h3>El crecimiento de las plataformas cloud</h3>
+
+          <p>
+            <time datetime="2026-09-25"> 25 de septiembre de 2026 </time>
+          </p>
+
+          <p>
+            Las plataformas cloud continúan siendo una parte fundamental de la
+            infraestructura tecnológica.
+          </p>
+
+          <a href="noticias/cloud.html"> Leer noticia completa </a>
+        </article>
+      </section>
+
+      <section>
+        <h2>Desarrollo</h2>
+
+        <article>
+          <h3>Buenas prácticas para proyectos HTML</h3>
+
+          <p>
+            Una buena estructura HTML facilita el mantenimiento y la
+            accesibilidad de los proyectos.
+          </p>
+
+          <a href="desarrollo/buenas-practicas-html.html"> Leer artículo </a>
+        </article>
+
+        <article>
+          <h3>Por qué utilizar HTML semántico</h3>
+
+          <p>
+            Los elementos semánticos permiten expresar mejor la estructura y
+            significado de una página.
+          </p>
+
+          <a href="desarrollo/html-semantico.html"> Leer artículo </a>
+        </article>
+      </section>
+
+      <aside>
+        <section>
+          <h2>Temas populares</h2>
+
+          <ul>
+            <li>
+              <a href="ia.html"> Inteligencia Artificial </a>
+            </li>
+
+            <li>
+              <a href="cloud.html"> Cloud Computing </a>
+            </li>
+
+            <li>
+              <a href="desarrollo.html"> Desarrollo Web </a>
+            </li>
+
+            <li>
+              <a href="seguridad.html"> Ciberseguridad </a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Newsletter</h2>
+
+          <p>Recibe las principales noticias tecnológicas de la semana.</p>
+
+          <a href="newsletter.html"> Suscribirme </a>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 TechNews</p>
+
+      <nav aria-label="Navegación del pie de página">
+        <ul>
+          <li>
+            <a href="privacidad.html"> Política de privacidad </a>
+          </li>
+
+          <li>
+            <a href="contacto.html"> Contacto </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
+
+<!--
+
+Qué estamos practicando
+
+Este ejercicio introduce una arquitectura mucho más cercana a un proyecto real:
+
+body
+│
+├── header
+│   └── nav
+│
+├── main
+│   │
+│   ├── h1
+│   │
+│   ├── section
+│   │   ├── article
+│   │   ├── article
+│   │   └── article
+│   │
+│   ├── section
+│   │   ├── article
+│   │   └── article
+│   │
+│   └── aside
+│       ├── section
+│       └── section
+│
+└── footer
+    └── nav
+
+
+    ¿Por qué `aside`?
+
+El contenido del `<aside>` está relacionado con el contenido principal, pero no constituye el contenido principal de la página.
+
+Por ejemplo:
+
+* temas populares;
+* newsletter;
+* enlaces relacionados;
+* contenido recomendado.
+
+No significa necesariamente "barra lateral". Con CSS podremos colocar el `<aside>` donde queramos.
+
+¿Por qué `article`?
+
+Cada noticia puede entenderse de forma independiente:
+
+<article>
+    <h3>...</h3>
+    <p>...</p>
+    <a href="...">Leer artículo</a>
+</article>
+
+Podríamos incluso extraer ese artículo de la página y seguiría teniendo sentido.
+
+¿Por qué `section`?
+
+Una `<section>` agrupa contenido relacionado bajo un concepto común y normalmente tiene un encabezado:
+
+<section>
+    <h2>Desarrollo</h2>
+
+    ...
+</section>
+
+Esto es diferente de utilizar `<section>` simplemente para conseguir un contenedor visual.
+
+-->
