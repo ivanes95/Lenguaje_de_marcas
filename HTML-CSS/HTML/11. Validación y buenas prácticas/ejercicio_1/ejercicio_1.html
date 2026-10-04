@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DevProjects | Desarrollo web</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>DevProjects</h1>
+
+      <p>Aprende desarrollo web</p>
+
+      <img src="logo.png" alt="Logotipo de DevProjects" />
+    </header>
+
+    <main>
+      <section>
+        <h2>Servicios</h2>
+
+        <p>
+          <a href="servicios.html"> Ver servicios </a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!--
+
+Errores corregidos
+
+1. Faltaba el DOCTYPE
+<!DOCTYPE html>
+
+2. Faltaba `lang`
+<html lang="es">
+
+3. El `<title>` no estaba cerrado
+
+Se ha corregido y además se ha hecho más descriptivo.
+
+4. Faltaba `viewport`
+
+Es una buena práctica básica para páginas responsive.
+
+5. El `<h1>` estaba mal cerrado
+
+Incorrecto:
+<h1>DevProjects</h2>
+
+Correcto:
+<h1>DevProjects</h1>
+
+6. La jerarquía de encabezados era incorrecta
+
+Se utilizaba directamente `<h4>` sin necesidad.
+
+Se ha cambiado a:
+<h1>DevProjects</h1>
+<h2>Servicios</h2>
+
+7. La imagen no tenía `alt`
+
+Ahora tiene:
+alt="Logotipo de DevProjects"
+
+8. El enlace estaba mal anidado
+
+Incorrecto:
+
+<a href="servicios.html">
+    Ver servicios
+</p>
+</a>
+
+Correcto:
+<a href="servicios.html">
+    Ver servicios
+</a>
+
+9. Se utilizaba `<div>` sin necesidad
+
+Como podemos identificar un encabezado y contenido principal, se han utilizado `header`, `main` y `section`.
+
+Esto no significa que `<div>` esté prohibido. Simplemente debemos utilizar un elemento semántico cuando represente mejor el contenido.
+
+-->

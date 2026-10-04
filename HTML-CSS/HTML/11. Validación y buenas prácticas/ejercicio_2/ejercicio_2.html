@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cursos de programación | CodeFactory</title>
+
+    <meta
+      name="description"
+      content="Aprende HTML, JavaScript y desarrollo web con los cursos prácticos de CodeFactory."
+    />
+  </head>
+
+  <body>
+    <header>
+      <p>CodeFactory</p>
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+
+          <li>
+            <a href="cursos.html">Cursos</a>
+          </li>
+
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Cursos de programación</h1>
+
+      <p>
+        Aprende programación profesional mediante cursos prácticos orientados al
+        desarrollo web.
+      </p>
+
+      <section>
+        <h2>HTML</h2>
+
+        <p>
+          Aprende a crear páginas web estructuradas utilizando HTML semántico.
+        </p>
+
+        <a href="cursos/html.html"> Ver curso de HTML </a>
+      </section>
+
+      <section>
+        <h2>JavaScript</h2>
+
+        <p>Aprende JavaScript para crear aplicaciones web interactivas.</p>
+
+        <img
+          src="javascript.jpg"
+          alt="Código JavaScript mostrado en un editor"
+        />
+
+        <p>
+          <a href="cursos/javascript.html"> Ver curso de JavaScript </a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 CodeFactory</p>
+    </footer>
+  </body>
+</html>
+
+<!--
+
+Principales mejoras
+
+1. `lang`
+
+Se añadió:
+<html lang="es">
+
+2. Metadatos
+
+Se añadieron:
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="...">
+
+3. Solo un `<h1>`
+
+La página debe tener un título principal claro:
+<h1>Cursos de programación</h1>
+
+El nombre de cada curso pasa a ser `<h2>`.
+
+h1 Cursos de programación
+│
+├── h2 HTML
+│
+└── h2 JavaScript
+
+4. Navegación semántica
+
+En lugar de:
+
+<div>
+    <a>...</a>
+</div>
+
+utilizamos:
+
+<nav>
+    <ul>
+        <li><a>...</a></li>
+    </ul>
+</nav>
+
+5. Enlaces descriptivos
+
+Se evita:
+<a href="#">Más información</a>
+
+porque no informa claramente de qué se va a consultar.
+
+Es mejor:
+
+<a href="cursos/html.html">
+    Ver curso de HTML
+</a>
+
+6. `alt`
+
+La imagen ahora comunica qué representa:
+
+alt="Código JavaScript mostrado en un editor"
+
+La regla no es simplemente "poner siempre un alt". 
+El texto debe describir la función o contenido relevante de la imagen.
+
+-->

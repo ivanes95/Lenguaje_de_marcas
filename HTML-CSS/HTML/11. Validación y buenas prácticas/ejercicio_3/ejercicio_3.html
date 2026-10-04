@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TechNova | Technology Solutions</title>
+
+    <meta
+      name="description"
+      content="TechNova provides web development and cloud solutions for modern businesses."
+    />
+  </head>
+
+  <body>
+    <header>
+      <p>TechNova</p>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+
+          <li>
+            <a href="services.html"> Services </a>
+          </li>
+
+          <li>
+            <a href="about.html"> About us </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Technology solutions for modern businesses</h1>
+
+      <p>
+        We create digital products and technology solutions that help businesses
+        grow.
+      </p>
+
+      <section>
+        <h2>Our services</h2>
+
+        <article>
+          <h3>Web development</h3>
+
+          <img src="web.jpg" alt="Web developer working on a website" />
+
+          <p>
+            We create modern and responsive websites for businesses and digital
+            products.
+          </p>
+
+          <a href="services/web-development.html">
+            Learn more about web development
+          </a>
+        </article>
+
+        <article>
+          <h3>Cloud solutions</h3>
+
+          <img
+            src="cloud.jpg"
+            alt="Cloud infrastructure represented on a computer screen"
+          />
+
+          <p>
+            We design cloud solutions that help companies build scalable and
+            reliable infrastructure.
+          </p>
+
+          <a href="services/cloud.html"> Learn more about cloud solutions </a>
+        </article>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+
+        <p>Would you like to discuss your next technology project?</p>
+
+        <a href="mailto:info@technova.example">
+          Contact the TechNova team by email
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 TechNova. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
+<!--
+
+Auditoría realizada
+
+Este ejercicio introduce una idea importante del trabajo profesional: **que una página funcione no significa que su HTML esté bien construido**.
+
+1. Estructura semántica
+
+Se ha pasado de:
+<div class="header">
+
+a:
+<header>
+
+y de:
+<div class="content">
+
+a:
+<main>
+
+Además:
+<div class="footer">
+
+se ha convertido en:
+<footer>
+
+    2. Jerarquía de encabezados
+
+La estructura ahora es:
+
+h1 Technology solutions...
+│
+└── h2 Our services
+    │
+    ├── h3 Web development
+    │
+    └── h3 Cloud solutions
+
+Y posteriormente:
+
+h2 Contact
+
+Esto representa correctamente la organización del contenido.
+
+3. `article`
+
+Cada servicio puede entenderse como una unidad independiente:
+<article>
+    <h3>Web development</h3>
+    ...
+</article>
+
+Por eso `article` tiene sentido en este caso.
+
+4. Enlaces
+
+Se han eliminado enlaces como:
+<a href="#">Click here</a>
+
+y se han sustituido por enlaces reales y descriptivos:
+
+<a href="services/web-development.html">
+    Learn more about web development
+</a>
+
+El usuario debería poder entender el destino de un enlace por su texto, sin depender únicamente del contexto visual.
+
+5. Imágenes
+
+Las imágenes ahora tienen `alt`:
+
+<img
+    src="web.jpg"
+    alt="Web developer working on a website"
+>
+
+Esto mejora la accesibilidad y proporciona información alternativa cuando la imagen no puede utilizarse.
+
+6. Metadatos
+
+La página incorpora los elementos básicos:
+
+<html lang="en">
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>...</title>
+
+<meta name="description" content="...">
+
+7. Separación de responsabilidades
+
+Aunque todavía no estamos trabajando CSS y JavaScript en profundidad, conviene adoptar ya una buena práctica:
+
+HTML
+│
+└── Estructura y significado
+
+CSS
+│
+└── Presentación y diseño
+
+JavaScript
+│
+└── Comportamiento e interacción
+
+Por eso no necesitamos clases como `header`, `content` o `footer` simplemente para expresar qué es cada elemento: HTML ya puede expresar esa semántica directamente.
+
+-->
