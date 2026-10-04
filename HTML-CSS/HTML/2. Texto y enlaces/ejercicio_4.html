@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WeatherAPI - Documentación</title>
+  </head>
+  <body>
+    <header>
+      <h1>WeatherAPI</h1>
+
+      <nav>
+        <a href="#introduccion">Introducción</a>
+        <a href="#autenticacion">Autenticación</a>
+        <a href="#usuarios">Endpoint de usuarios</a>
+        <a href="#ciudades">Endpoint de ciudades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="introduccion">
+        <h2>Introducción</h2>
+
+        <p>
+          WeatherAPI es una API ficticia que permite consultar información
+          meteorológica de diferentes ciudades.
+        </p>
+
+        <p>
+          Puedes consultar la
+          <a
+            href="https://developer.mozilla.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            documentación externa sobre desarrollo web
+          </a>
+          para obtener más información.
+        </p>
+      </section>
+
+      <section id="autenticacion">
+        <h2>Autenticación</h2>
+
+        <p>
+          Para utilizar la API es necesario proporcionar una clave de
+          autenticación en cada petición.
+        </p>
+
+        <p>
+          Consulta nuestra
+          <a href="#seguridad"> política de seguridad </a>.
+        </p>
+      </section>
+
+      <section id="usuarios">
+        <h2>Endpoint de usuarios</h2>
+
+        <p>
+          Este endpoint permite obtener información sobre los usuarios
+          registrados.
+        </p>
+
+        <p>Ejemplo:</p>
+
+        <p>GET /api/usuarios</p>
+      </section>
+
+      <section id="ciudades">
+        <h2>Endpoint de ciudades</h2>
+
+        <p>
+          Este endpoint permite consultar información meteorológica de
+          diferentes ciudades.
+        </p>
+
+        <p>Ejemplo:</p>
+
+        <p>GET /api/ciudades</p>
+      </section>
+
+      <section id="seguridad">
+        <h2>Política de seguridad</h2>
+
+        <p>
+          Las claves de acceso deben mantenerse privadas y no deben compartirse
+          públicamente.
+        </p>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+
+        <p>Para obtener ayuda puedes contactar con el equipo de soporte.</p>
+
+        <p>
+          <a href="mailto:soporte@weatherapi.example">
+            Contactar con soporte
+          </a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!--
+Este ejercicio introduce algo muy importante: un enlace no siempre lleva a
+otra página.
+
+Por ejemplo: 
+<a href="#usuarios">Endpoint de usuarios</a>
+
+lleva al elemento que tiene: id="usuarios"
+Esto se utiliza constantemente en documentación técnica, páginas largas, FAQs, etc.
+-->
