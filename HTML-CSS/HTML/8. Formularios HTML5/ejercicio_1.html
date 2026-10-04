@@ -1,57 +1,56 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
-    <title>Formulario de prueba de HTML5</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - DevSolutions</title>
   </head>
   <body>
-    <form action="" method="get">
-      <p>
-        Nombre: <input type="text" name="name_control" autofocus required />
-      </p>
+    <h1>Contacta con DevSolutions</h1>
 
-      <p>
-        Correo electrónico: <input type="email" name="email_control" required />
-      </p>
+    <form>
+      <label for="nombre"> Nombre: </label>
 
-      <p>
-        URL:
-        <input
-          type="url"
-          name="url_control"
-          placeholder="Escribe la URL de tu página web personal"
-        />
-      </p>
+      <input type="text" id="nombre" name="nombre" />
 
-      <p>Fecha: <input type="date" name="date_control" /></p>
+      <label for="email"> Email: </label>
 
-      <p>Tiempo: <input type="time" name="time_control" /></p>
+      <input type="email" id="email" name="email" required />
 
-      <p>Fecha y hora: <input type="datetime" name="datetime_control" /></p>
+      <label for="telefono"> Teléfono: </label>
 
-      <p>Mes: <input type="month" name="month_control" /></p>
+      <input type="tel" id="telefono" name="telefono" />
 
-      <p>Semana: <input type="week" name="week_control" /></p>
+      <label for="web"> Página web: </label>
 
-      <p>
-        Número (min -10, max 10):
-        <input
-          type="number"
-          name="number_control"
-          min="-10"
-          max="10"
-          value="0"
-        />
-      </p>
+      <input type="url" id="web" name="web" />
 
-      <p>Teléfono: <input type="tel" name="tel_control" /></p>
-
-      <p>Término de búsqueda: <input type="search" name="search_control" /></p>
-
-      <p>Color favorito: <input type="color" name="color_control" /></p>
-
-      <p>
-        <input type="submit" value="Enviar" />
-      </p>
+      <button type="submit">Enviar</button>
     </form>
   </body>
 </html>
+
+<!--
+
+Qué estamos introduciendo
+
+Ahora HTML puede conocer el tipo de información que esperamos:
+<input type="email">
+
+no es lo mismo que:
+<input type="text">
+
+
+También:
+<input type="url">
+
+indica que esperamos una dirección web.
+
+Y:
+<input type="tel">
+
+indica que esperamos un número de teléfono.
+
+Esto permite que el navegador adapte el comportamiento del campo y realice determinadas comprobaciones automáticamente.
+
+-->

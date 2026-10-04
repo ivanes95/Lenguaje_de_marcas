@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil profesional</title>
+  </head>
+  <body>
+    <h1>Perfil profesional</h1>
+
+    <form>
+      <fieldset>
+        <legend>Información personal</legend>
+
+        <label for="nombre"> Nombre: </label>
+
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="apellidos"> Apellidos: </label>
+
+        <input type="text" id="apellidos" name="apellidos" required />
+
+        <label for="email"> Email: </label>
+
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefono"> Teléfono: </label>
+
+        <input type="tel" id="telefono" name="telefono" />
+
+        <label for="fecha"> Fecha de nacimiento: </label>
+
+        <input type="date" id="fecha" name="fecha" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Perfil profesional</legend>
+
+        <label for="usuario"> Nombre de usuario: </label>
+
+        <input
+          type="text"
+          id="usuario"
+          name="usuario"
+          pattern="[A-Za-z0-9_]+"
+          minlength="4"
+          maxlength="15"
+          required
+        />
+
+        <label for="github"> GitHub: </label>
+
+        <input
+          type="url"
+          id="github"
+          name="github"
+          placeholder="https://github.com/usuario"
+        />
+
+        <label for="linkedin"> LinkedIn: </label>
+
+        <input
+          type="url"
+          id="linkedin"
+          name="linkedin"
+          placeholder="https://www.linkedin.com/in/usuario"
+        />
+
+        <label for="experiencia"> Años de experiencia: </label>
+
+        <input
+          type="number"
+          id="experiencia"
+          name="experiencia"
+          min="0"
+          max="40"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Biografía</legend>
+
+        <label for="biografia"> Cuéntanos sobre ti: </label>
+
+        <textarea
+          id="biografia"
+          name="biografia"
+          minlength="50"
+          maxlength="500"
+          rows="8"
+          cols="50"
+          required
+        ></textarea>
+      </fieldset>
+
+      <button type="submit">Guardar perfil</button>
+
+      <button type="reset">Limpiar formulario</button>
+    </form>
+  </body>
+</html>
+
+<!--
+
+`pattern`
+
+El atributo:
+
+pattern="[A-Za-z0-9_]+"
+
+indica que el valor debe cumplir ese patrón.
+
+En este caso permite:
+
+`A-Z` → letras mayúsculas.
+`a-z` → letras minúsculas.
+`0-9` → números.
+`_` → guion bajo.
+
+El `+` indica que debe existir al menos un carácter que cumpla el patrón.
+
+Importante
+
+`pattern` no sustituye a `minlength` y `maxlength`.
+
+Por ejemplo:
+
+
+pattern="[A-Za-z0-9_]+"
+minlength="4"
+maxlength="15"
+
+significa:
+
+> Solo estos caracteres y, además, entre 4 y 15 caracteres.
+
+Esta combinación es muy habitual en formularios reales.
+
+-->

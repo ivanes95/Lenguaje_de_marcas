@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidatura - TechJobs</title>
+  </head>
+  <body>
+    <header>
+      <h1>Candidatura profesional</h1>
+
+      <p>Completa el formulario para solicitar un puesto en TechJobs.</p>
+    </header>
+
+    <main>
+      <form>
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <label for="nombre"> Nombre: </label>
+
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            autocomplete="given-name"
+            required
+          />
+
+          <label for="apellidos"> Apellidos: </label>
+
+          <input
+            type="text"
+            id="apellidos"
+            name="apellidos"
+            autocomplete="family-name"
+            required
+          />
+
+          <label for="email"> Email: </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          />
+
+          <label for="telefono"> Teléfono: </label>
+
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            autocomplete="tel"
+            required
+          />
+
+          <label for="fecha-nacimiento"> Fecha de nacimiento: </label>
+
+          <input
+            type="date"
+            id="fecha-nacimiento"
+            name="fecha-nacimiento"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos profesionales</legend>
+
+          <label for="puesto"> Puesto solicitado: </label>
+
+          <select id="puesto" name="puesto" required>
+            <option value="">Selecciona un puesto</option>
+
+            <option value="frontend">Frontend Developer</option>
+
+            <option value="backend">Backend Developer</option>
+
+            <option value="fullstack">Full Stack Developer</option>
+
+            <option value="devops">DevOps Engineer</option>
+
+            <option value="data">Data Engineer</option>
+          </select>
+
+          <label for="experiencia"> Años de experiencia: </label>
+
+          <input
+            type="number"
+            id="experiencia"
+            name="experiencia"
+            min="0"
+            max="40"
+            required
+          />
+
+          <label for="portfolio"> Portfolio: </label>
+
+          <input
+            type="url"
+            id="portfolio"
+            name="portfolio"
+            placeholder="https://ejemplo.com"
+            required
+          />
+
+          <label for="github"> GitHub: </label>
+
+          <input
+            type="url"
+            id="github"
+            name="github"
+            placeholder="https://github.com/usuario"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Disponibilidad</legend>
+
+          <label for="incorporacion"> Fecha de incorporación: </label>
+
+          <input type="date" id="incorporacion" name="incorporacion" required />
+
+          <label for="salario"> Pretensión salarial anual: </label>
+
+          <input
+            type="number"
+            id="salario"
+            name="salario"
+            min="18000"
+            max="120000"
+            step="1000"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Idiomas</legend>
+
+          <label for="ingles"> Nivel de inglés: </label>
+
+          <input
+            type="range"
+            id="ingles"
+            name="ingles"
+            min="0"
+            max="10"
+            value="5"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Identificación</legend>
+
+          <label for="codigo"> Código de candidato: </label>
+
+          <input
+            type="text"
+            id="codigo"
+            name="codigo"
+            pattern="DEV-[0-9]{4}"
+            minlength="8"
+            maxlength="8"
+            placeholder="DEV-1234"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Tecnologías</legend>
+
+          <p>Selecciona las tecnologías que conoces:</p>
+
+          <input type="checkbox" id="html" name="tecnologias" value="html" />
+          <label for="html">HTML</label>
+
+          <input type="checkbox" id="css" name="tecnologias" value="css" />
+          <label for="css">CSS</label>
+
+          <input
+            type="checkbox"
+            id="javascript"
+            name="tecnologias"
+            value="javascript"
+          />
+          <label for="javascript">JavaScript</label>
+
+          <input
+            type="checkbox"
+            id="typescript"
+            name="tecnologias"
+            value="typescript"
+          />
+          <label for="typescript">TypeScript</label>
+
+          <input
+            type="checkbox"
+            id="python"
+            name="tecnologias"
+            value="python"
+          />
+          <label for="python">Python</label>
+
+          <input type="checkbox" id="java" name="tecnologias" value="java" />
+          <label for="java">Java</label>
+
+          <input type="checkbox" id="sql" name="tecnologias" value="sql" />
+          <label for="sql">SQL</label>
+
+          <input
+            type="checkbox"
+            id="docker"
+            name="tecnologias"
+            value="docker"
+          />
+          <label for="docker">Docker</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Carta de presentación</legend>
+
+          <label for="carta">
+            Cuéntanos por qué quieres trabajar con nosotros:
+          </label>
+
+          <textarea
+            id="carta"
+            name="carta"
+            rows="10"
+            cols="60"
+            minlength="100"
+            maxlength="1500"
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Consentimiento</legend>
+
+          <input
+            type="checkbox"
+            id="privacidad"
+            name="privacidad"
+            value="aceptada"
+            required
+          />
+
+          <label for="privacidad">
+            Acepto el tratamiento de mis datos para gestionar mi candidatura.
+          </label>
+        </fieldset>
+
+        <button type="submit">Enviar candidatura</button>
+
+        <button type="reset">Limpiar formulario</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 TechJobs</p>
+    </footer>
+  </body>
+</html>
+
+<!--
+
+Conceptos que reúne
+
+Este ejercicio integra prácticamente todo el bloque:
+
+| Concepto        | Uso                        |
+| --------------- | -------------------------- |
+| `type="email"`  | Email                      |
+| `type="tel"`    | Teléfono                   |
+| `type="url"`    | Portfolio/GitHub           |
+| `type="date"`   | Fechas                     |
+| `type="number"` | Experiencia/salario        |
+| `type="range"`  | Nivel de inglés            |
+| `checkbox`      | Tecnologías/consentimiento |
+| `select`        | Puesto                     |
+| `required`      | Campos obligatorios        |
+| `min` / `max`   | Límites numéricos          |
+| `step`          | Incrementos numéricos      |
+| `minlength`     | Longitud mínima            |
+| `maxlength`     | Longitud máxima            |
+| `pattern`       | Formato personalizado      |
+| `placeholder`   | Ayuda contextual           |
+| `autocomplete`  | Autocompletado             |
+
+Una parte especialmente interesante es:
+
+<input
+    type="number"
+    min="18000"
+    max="120000"
+    step="1000"
+>
+
+Aquí no solo indicamos que queremos un número. 
+También definimos qué valores son válidos y cómo debe incrementarse el valor.
+
+Y en:
+
+<input
+    type="text"
+    pattern="DEV-[0-9]{4}"
+>
+
+estamos indicando que el dato debe seguir una estructura concreta.
+
+Todo esto permite que el navegador haga una primera capa de validación sin JavaScript.
+
+-->

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - CodeAcademy</title>
+  </head>
+  <body>
+    <h1>Crear una cuenta</h1>
+
+    <form>
+      <label for="usuario"> Nombre de usuario: </label>
+
+      <input
+        type="text"
+        id="usuario"
+        name="usuario"
+        minlength="4"
+        maxlength="20"
+        required
+      />
+
+      <label for="email"> Email: </label>
+
+      <input type="email" id="email" name="email" required />
+
+      <label for="password"> Contraseña: </label>
+
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="8"
+        maxlength="30"
+        required
+      />
+
+      <label for="confirmacion"> Confirmar contraseña: </label>
+
+      <input
+        type="password"
+        id="confirmacion"
+        name="confirmacion"
+        minlength="8"
+        maxlength="30"
+        required
+      />
+
+      <button type="submit">Crear cuenta</button>
+    </form>
+  </body>
+</html>
+
+<!--
+
+Nuevos atributos
+
+`required`: required
+
+indica que el usuario debe proporcionar un valor.
+
+`minlength`: minlength="8"
+
+establece el número mínimo de caracteres.
+
+`maxlength`: maxlength="30"
+
+establece el número máximo.
+
+Una idea importante para el alumno:
+
+> HTML5 puede realizar muchas validaciones básicas sin necesidad de JavaScript.
+
+En este ejercicio todavía no comprobamos que ambas contraseñas sean iguales. 
+Esa comprobación requeriría lógica adicional.
+
+-->

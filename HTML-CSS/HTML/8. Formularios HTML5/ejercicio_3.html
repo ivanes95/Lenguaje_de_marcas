@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscripción a cursos</title>
+  </head>
+  <body>
+    <h1>Inscripción a un curso</h1>
+
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="nombre"> Nombre: </label>
+
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email"> Email: </label>
+
+        <input type="email" id="email" name="email" required />
+
+        <label for="fecha"> Fecha de nacimiento: </label>
+
+        <input type="date" id="fecha" name="fecha" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Curso</legend>
+
+        <label for="curso"> Selecciona un curso: </label>
+
+        <select id="curso" name="curso" required>
+          <option value="">Selecciona un curso</option>
+
+          <option value="html-css">HTML y CSS</option>
+
+          <option value="javascript">JavaScript</option>
+
+          <option value="python">Python</option>
+
+          <option value="backend">Desarrollo Backend</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dedicación</legend>
+
+        <label for="horas"> Horas semanales: </label>
+
+        <input
+          type="number"
+          id="horas"
+          name="horas"
+          min="1"
+          max="40"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Nivel de experiencia</legend>
+
+        <label for="experiencia"> Nivel de experiencia: </label>
+
+        <input
+          type="range"
+          id="experiencia"
+          name="experiencia"
+          min="0"
+          max="10"
+          value="5"
+        />
+      </fieldset>
+
+      <button type="submit">Inscribirme</button>
+    </form>
+  </body>
+</html>
+
+<!--
+
+Conceptos nuevos
+
+`type="number"`:
+
+<input
+    type="number"
+    min="1"
+    max="40"
+>
+
+permite introducir valores numéricos y establecer límites.
+
+`type="range"`:
+
+<input
+    type="range"
+    min="0"
+    max="10"
+    value="5"
+>
+
+crea un control deslizante.
+
+`type="date"` permite introducir una fecha mediante el control de fecha proporcionado por el navegador.
+
+Aquí el alumno empieza a entender que el HTML no solo describe qué datos hay, sino también qué tipo de datos espera recibir.
+
+-->
