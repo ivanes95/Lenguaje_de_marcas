@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task API - Documentación</title>
+  </head>
+  <body>
+    <header>
+      <h1>Task API — Documentación</h1>
+
+      <p>Task API permite gestionar tareas mediante peticiones HTTP.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Endpoints disponibles</h2>
+
+        <ul>
+          <li>GET /tasks</li>
+          <li>GET /tasks/{id}</li>
+          <li>POST /tasks</li>
+          <li>PUT /tasks/{id}</li>
+          <li>DELETE /tasks/{id}</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Pasos para realizar una petición</h2>
+
+        <ol>
+          <li>Obtener el token de autenticación.</li>
+          <li>Crear la petición HTTP.</li>
+          <li>Añadir las cabeceras necesarias.</li>
+          <li>Enviar la petición.</li>
+          <li>Procesar la respuesta.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Parámetros</h2>
+
+        <dl>
+          <dt>id</dt>
+          <dd>Identificador único de la tarea.</dd>
+
+          <dt>title</dt>
+          <dd>Título o nombre de la tarea.</dd>
+
+          <dt>completed</dt>
+          <dd>Indica si la tarea ha sido completada.</dd>
+
+          <dt>createdAt</dt>
+          <dd>Fecha y hora en la que se creó la tarea.</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Estructura de una tarea</h2>
+
+        <ul>
+          <li>
+            Identificación
+
+            <ul>
+              <li>id</li>
+            </ul>
+          </li>
+
+          <li>
+            Información
+
+            <ul>
+              <li>title</li>
+              <li>completed</li>
+            </ul>
+          </li>
+
+          <li>
+            Fecha
+
+            <ul>
+              <li>createdAt</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Task API</p>
+    </footer>
+  </body>
+</html>
+
+<!--
+
+Qué integra este ejercicio
+
+Este último ejercicio reúne prácticamente todo lo trabajado en el bloque:
+
+Elemento	Uso
+<ul>	Conjunto de endpoints
+<ol>	Procedimiento paso a paso
+<li>	Elementos de las listas
+<dl>	Parámetros y descripciones
+<dt>	Nombre del parámetro
+<dd>	Descripción
+Listas anidadas	Estructura de una tarea
+<section>	Agrupación semántica
+<header>	Cabecera del documento
+<main>	Contenido principal
+<footer>	Pie de página
+
+Además, el ejercicio obliga a elegir el tipo de lista adecuado según el significado del contenido, que es bastante más importante profesionalmente que memorizar las etiquetas.
+
+-->
