@@ -1,37 +1,46 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
-    <title>Formulario de registro - Mi web</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - DevSolutions</title>
   </head>
   <body>
-    <h1>Formulario de registro</h1>
+    <h1>Contacta con DevSolutions</h1>
 
-    <form action="" method="get">
-      <p>Nombre: <input type="text" name="nombre" maxlength="50" /></p>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" />
 
-      <p>Apellidos: <input type="text" name="apellidos" maxlength="50" /></p>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" />
 
-      <p>
-        Sexo: <input type="radio" name="sexo" value="h" /> hombre
-        <input type="radio" name="sexo" value="m" /> mujer
-      </p>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje"></textarea>
 
-      <p>Correo: <input type="text" name="correo" maxlength="100" /></p>
-
-      <p>
-        <input type="checkbox" name="info" checked="checked" /> Deseo recibir
-        información sobre novedades y ofertas
-      </p>
-
-      <p>
-        <input type="checkbox" name="condiciones" /> Declaro haber leido y
-        aceptar las condiciones generales del programa y la normativa sobre
-        protección de datos
-      </p>
-
-      <p>
-        <input type="submit" value="Enviar" />
-      </p>
+      <button type="submit">Enviar mensaje</button>
     </form>
   </body>
 </html>
+
+<!--
+
+Conceptos fundamentales
+
+La relación entre `label` e `input` es muy importante:
+
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre">
+
+
+El valor de `for` debe coincidir con el `id` del campo.
+
+Además:
+
+`id` identifica el elemento en el documento.
+`name` identifica el dato que se enviará al servidor.
+`label` proporciona una etiqueta comprensible para el usuario.
+`textarea` permite introducir texto de varias líneas.
+`button` permite ejecutar una acción.
+
+-->

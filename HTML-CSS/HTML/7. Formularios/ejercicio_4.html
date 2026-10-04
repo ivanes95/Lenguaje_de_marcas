@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preferencias del desarrollador</title>
+  </head>
+  <body>
+    <h1>Preferencias del desarrollador</h1>
+
+    <form>
+      <fieldset>
+        <legend>Información personal</legend>
+
+        <label for="nombre"> Nombre: </label>
+
+        <input type="text" id="nombre" name="nombre" />
+
+        <label for="usuario"> Nombre de usuario: </label>
+
+        <input type="text" id="usuario" name="usuario" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Tecnologías favoritas</legend>
+
+        <p>Puedes seleccionar varias:</p>
+
+        <input type="checkbox" id="html" name="tecnologias" value="html" />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="tecnologias" value="css" />
+        <label for="css">CSS</label>
+
+        <input
+          type="checkbox"
+          id="javascript"
+          name="tecnologias"
+          value="javascript"
+        />
+        <label for="javascript">JavaScript</label>
+
+        <input type="checkbox" id="python" name="tecnologias" value="python" />
+        <label for="python">Python</label>
+
+        <input type="checkbox" id="java" name="tecnologias" value="java" />
+        <label for="java">Java</label>
+
+        <input type="checkbox" id="php" name="tecnologias" value="php" />
+        <label for="php">PHP</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Nivel de experiencia</legend>
+
+        <input
+          type="radio"
+          id="principiante"
+          name="nivel"
+          value="principiante"
+        />
+        <label for="principiante"> Principiante </label>
+
+        <input type="radio" id="intermedio" name="nivel" value="intermedio" />
+        <label for="intermedio"> Intermedio </label>
+
+        <input type="radio" id="avanzado" name="nivel" value="avanzado" />
+        <label for="avanzado"> Avanzado </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Área profesional</legend>
+
+        <label for="area"> Selecciona tu área: </label>
+
+        <select id="area" name="area">
+          <option value="">Selecciona una opción</option>
+
+          <option value="frontend">Frontend</option>
+
+          <option value="backend">Backend</option>
+
+          <option value="fullstack">Full Stack</option>
+
+          <option value="devops">DevOps</option>
+
+          <option value="data">Data</option>
+
+          <option value="ciberseguridad">Ciberseguridad</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sobre ti</legend>
+
+        <label for="proyectos">
+          Describe brevemente los proyectos que desarrollas:
+        </label>
+
+        <textarea id="proyectos" name="proyectos" rows="6" cols="50"></textarea>
+      </fieldset>
+
+      <button type="submit">Guardar preferencias</button>
+
+      <button type="reset">Limpiar formulario</button>
+    </form>
+  </body>
+</html>
+
+<!--
+
+Concepto fundamental: `checkbox` frente a `radio`
+
+La diferencia debe quedar muy clara:
+
+Radio:
+<input type="radio" name="nivel">
+
+Se utiliza cuando el usuario debe elegir **una opción de un grupo**.
+
+Checkbox:
+
+html
+<input type="checkbox" name="tecnologias">
+
+Se utiliza cuando puede elegir una o varias opciones.
+
+Este es uno de los conceptos fundamentales que el alumno debe dominar antes de avanzar hacia formularios HTML5.
+
+-->

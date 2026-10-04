@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud de información</title>
+  </head>
+  <body>
+    <h1>Solicita información sobre nuestros cursos</h1>
+
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" />
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Curso</legend>
+
+        <p>Selecciona un curso:</p>
+
+        <input type="radio" id="html-css" name="curso" value="html-css" />
+        <label for="html-css">HTML y CSS</label>
+
+        <input type="radio" id="javascript" name="curso" value="javascript" />
+        <label for="javascript">JavaScript</label>
+
+        <input type="radio" id="python" name="curso" value="python" />
+        <label for="python">Python</label>
+
+        <input type="radio" id="backend" name="curso" value="backend" />
+        <label for="backend">Desarrollo Backend</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Modalidad</legend>
+
+        <label for="modalidad">Selecciona una modalidad:</label>
+
+        <select id="modalidad" name="modalidad">
+          <option value="">Selecciona una opción</option>
+
+          <option value="online">Online</option>
+
+          <option value="presencial">Presencial</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Comentarios</legend>
+
+        <label for="comentarios"> ¿Tienes alguna pregunta? </label>
+
+        <textarea
+          id="comentarios"
+          name="comentarios"
+          rows="6"
+          cols="40"
+        ></textarea>
+      </fieldset>
+
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </body>
+</html>
+
+<!--
+
+Concepto fundamental: `radio`
+
+Para que varios `radio` pertenezcan al mismo grupo, deben compartir el mismo `name`:
+
+<input type="radio" name="curso" value="html-css">
+<input type="radio" name="curso" value="javascript">
+<input type="radio" name="curso" value="python">
+
+Esto permite seleccionar **una sola opción**.
+
+En cambio, un `select` permite seleccionar una opción mediante una lista desplegable.
+
+`fieldset` y `legend` empiezan a introducir una estructura más profesional para formularios:
+
+<fieldset>
+    <legend>Curso</legend>
+
+    ...
+</fieldset>
+
+`fieldset` agrupa controles relacionados y `legend` proporciona el nombre del grupo.
+
+-->

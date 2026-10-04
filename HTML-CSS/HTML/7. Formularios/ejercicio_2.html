@@ -1,72 +1,49 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
-    <title>Formulario de registro - Mi web</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - CodeAcademy</title>
   </head>
   <body>
-    <h1>Formulario de registro</h1>
+    <h1>Crear una cuenta en CodeAcademy</h1>
 
-    <form action="" method="get">
-      <p>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" maxlength="50" />
-      </p>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" />
 
-      <p>
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" name="apellidos" id="apellidos" maxlength="50" />
-      </p>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" />
 
-      <p>
-        Sexo: <input type="radio" name="sexo" id="sexo-h" value="h" />
-        <label for="sexo-h">hombre</label>
-        <input type="radio" name="sexo" id="sexo-m" value="m" />
-        <label for="sexo-m">mujer</label>
-      </p>
+      <label for="usuario">Nombre de usuario:</label>
+      <input type="text" id="usuario" name="usuario" />
 
-      <p>
-        <label for="correo">Correo:</label>
-        <input type="text" name="correo" id="correo" maxlength="100" />
-      </p>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" />
 
-      <p>
-        <label for="poblacion">Población:</label>
-        <select name="poblacion" id="poblacion">
-          <option>Alicante</option>
-          <option>Madrid</option>
-          <option>Sevilla</option>
-          <option>Valencia</option>
-        </select>
-      </p>
+      <label for="confirmacion"> Confirmar contraseña: </label>
+      <input type="password" id="confirmacion" name="confirmacion" />
 
-      <p>
-        <label for="descripcion">Descripción:</label>
-        <textarea
-          name="descripcion"
-          id="descripcion"
-          rows="6"
-          cols="60"
-        ></textarea>
-      </p>
+      <button type="submit">Registrarse</button>
 
-      <p>
-        <input type="checkbox" name="info" id="info" checked="checked" />
-        <label for="info"
-          >Deseo recibir información sobre novedades y ofertas</label
-        >
-      </p>
-
-      <p>
-        <input type="checkbox" name="condiciones" id="condiciones" />
-        <label for="condiciones">
-          Declaro haber leido y aceptar las condiciones generales del programa y
-          la normativa sobre protección de datos</label
-        >
-      </p>
-
-      <p>
-        <input type="submit" value="Enviar" />
-      </p>
+      <button type="reset">Limpiar formulario</button>
     </form>
   </body>
 </html>
+
+<!--
+
+Conceptos nuevos
+
+`type="password"` hace que el contenido introducido no se muestre directamente:
+
+<input type="password">
+
+También aparecen dos tipos importantes de botones:
+
+<button type="submit">Registrarse</button>
+<button type="reset">Limpiar formulario</button>
+
+`submit` envía el formulario y `reset` devuelve los controles a su estado inicial.
+
+-->
