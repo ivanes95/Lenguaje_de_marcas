@@ -10,9 +10,9 @@ Observa este JSON:
 
 Indica qué tipo de dato corresponde a cada valor: 
 
-1. "Carlos" → ?  
-2. 30 → ?  
-3. false → ?  
-4. null → ?  
+1. "Carlos" → String 
+2. 30 → Integer (number)
+3. false → Boolean
+4. null → Null
 
 Objetivo: distinguir String, Number, Boolean y Null.
