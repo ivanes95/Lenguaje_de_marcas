@@ -8,9 +8,9 @@ Tenemos este objeto:
 } 
 
 Responde: 
-1. ¿Qué tipo de dato tiene precio?  
-2. ¿Qué tipo de dato tiene stock?  
-3. ¿Son del mismo tipo?  
+1. ¿Qué tipo de dato tiene precio? -> String
+2. ¿Qué tipo de dato tiene stock?   -> Integer
+3. ¿Son del mismo tipo? -> No 
 4. Modifica el JSON para que precio sea un número en lugar de texto.  
 
 Objetivo: entender la diferencia entre un string que contiene un valor numérico y un 
